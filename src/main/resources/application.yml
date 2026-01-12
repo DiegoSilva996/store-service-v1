@@ -3,8 +3,8 @@ spring:
     name: store-service
   r2dbc:
     url: r2dbc:postgresql://localhost:5432/storedb
-    username: postgres
-    password: CfT*g4Z81}0r7
+    username: 
+    password:
     pool:
       enabled: true
       initial-size: 5
