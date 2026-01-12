@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: store-service
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/storedb
+    username: 
+    password:
+    pool:
+      enabled: true
+      initial-size: 5
+      max-size: 20
+      max-idle-time: 30s
+    show-sql: true
+logging:
+  level:
+    org.springframework.r2dbc: INFO
+    io.r2dbc.postgresql.QUERY: DEBUG
+    reactor.netty: DEBUG
+    org.springframework.data.r2dbc: DEBUG
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
